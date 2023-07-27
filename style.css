@@ -1,0 +1,118 @@
+*{
+    margin:0;
+    padding:0;
+}
+.game{
+    background-image: url("snakebg.jpg");
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.screen{
+    background-color: rgb(0,128,0,0.5);
+    width : 100vw;
+    height: 100vh;
+    background: url("snakebg1.jpg");
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+}
+button{
+    cursor:pointer;
+    background-color:bisque;
+    font-size: medium;
+    padding: 0.5vw 1vw;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 8%;
+    font-weight: bolder;
+    margin-top: 50vh;
+    margin-left: 40vw;
+    font-size: larger;
+}
+#board{
+    background: linear-gradient(green,yellow);
+    margin: 0vh 15vw 0vh 15vw;
+    width:70vw;
+    height:100vh;
+    border:2px solid chocolate;
+    display: grid;
+    grid-template-columns: repeat(25,1fr);
+    grid-template-rows:repeat(30,1fr);
+}
+.head{
+    background: linear-gradient(orange,plum);
+    border: 2px solid rgb(34, 4, 34); 
+    transform: scale(1.02);
+    border-radius: 9px;
+}
+.food{
+    background: linear-gradient(red, purple);
+    border: .25vmin solid black;
+    border-radius:8px;
+}
+.snake{
+    background-color: plum;
+    border: .25vmin solid white;
+    border-radius: 12px;
+}
+#scoreBox{
+    position: absolute;
+    top: 2vh;
+    color: aquamarine;
+    right: 2vw;
+    font-size: 2vw;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+}
+
+#hiscoreBox{
+    position: absolute;
+    color: aquamarine;
+    top:5vh;
+    right: 2vw;
+    font-size: 2vw;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+}
+@media screen and (max-width:850px)
+{
+    #scoreBox{
+        font-size:4vw;
+        right:0vw;
+        top:3vh;
+    }
+    #hiscoreBox{
+        font-size: 4vw;
+        right: 0vw;
+        top:8vh;
+    }
+}
+@media screen and (max-width:450px)
+{
+    #scoreBox{
+        top:2vh;
+    }
+    #hiscoreBox{
+        top:5vh;
+    }
+}
+@media screen and (min-width:1000px)
+{
+    #scoreBox{
+        top:2vh;
+    }
+    #hiscoreBox{
+        top:8vh;
+    }
+}
+@media screen and (min-width:1200px)
+{
+    button{
+        margin-top: 47vh;
+        margin-left: 45vw;
+        font-size: 2vw;
+    }
+}
